@@ -18,6 +18,7 @@ typedef NS_ENUM(NSInteger, WhichPlayer) {
 
 @property (nonatomic) Player* playerOne;
 @property (nonatomic) Player* playerTwo;
+@property (nonatomic) WhichPlayer currentPlayer;
 
 -(void)wrongAnswer:(Player*)player;
 
