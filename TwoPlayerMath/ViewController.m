@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *playerOneScore;
 @property (weak, nonatomic) IBOutlet UILabel *playerTwoScore;
+@property (weak, nonatomic) IBOutlet UIButton *enterLabel;
 
 @end
 
@@ -29,6 +30,7 @@
     self.questionLabel.text = fullQuestion;
     self.playerOneScore.text = @"Player 1: 3";
     self.playerTwoScore.text = @"Player 2: 3";
+    
 }
 
 
@@ -42,9 +44,11 @@
     self.answerLabel.text = @"";
     self.playerOneScore.text = [NSString stringWithFormat:@"Player 1: %d", self.gameModel.playerOne.lives];
     self.playerTwoScore.text = [NSString stringWithFormat:@"Player 2: %d", self.gameModel.playerTwo.lives];
-    if(self.gameModel.playerOne.lives == 0 || self.gameModel.playerTwo.lives == 0) {
-        self.questionLabel.text = @"GAME OVER";
-    }
+    
+//    if([self.gameModel isGameOver]) {
+//        self.enterLabel. = @"GAME OVER";
+//    }
+    
     NSString* fullQuestion = [self.gameModel playerAndQuestion];
     self.questionLabel.text = fullQuestion;
     

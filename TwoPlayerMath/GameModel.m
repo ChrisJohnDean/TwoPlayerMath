@@ -47,7 +47,18 @@
     if(answer != self.anotherQuestion.answer) {
         self.currentPlayer.lives -= 1;
     }
+    
     [self changeTurn];
+}
+
+-(BOOL)isGameOver {
+    if(self.playerOne.lives < 0) {
+        return true;
+    } else if(self.playerTwo < 0) {
+    return true;
+    } else {
+    return false;
+    }
 }
 
 @end

@@ -20,4 +20,6 @@
 -(void)wrongAnswer:(Player*)player;
 -(NSMutableString*)playerAndQuestion;
 -(void)answerQuestionWith:(NSInteger)answer;
+-(BOOL)isGameOver;
+
 @end
