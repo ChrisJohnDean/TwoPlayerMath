@@ -31,7 +31,6 @@
     NSMutableString* questionString = [self.anotherQuestion generateQuestion];
     NSMutableString* playerAndQuestionString;
     playerAndQuestionString = [NSMutableString stringWithFormat:@"%@ %@", self.currentPlayer.playerNumber, questionString];
-    [self changeTurn];
     return playerAndQuestionString;
 }
 
@@ -44,4 +43,28 @@
     }
 }
 
+-(void)answerQuestionWith:(NSInteger)firstEntry  and:(NSInteger)secondEntry {
+    self.answer = (firstEntry*10) + secondEntry;
+    if(self.answer == self.anotherQuestion.answer) {
+        self.currentPlayer.lives -= 1;
+    }
+    [self changeTurn];
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

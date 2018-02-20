@@ -35,4 +35,15 @@
     
 }
 
+- (IBAction)selectNumbers:(UIButton*)sender {
+    NSInteger firstEntry;
+    NSInteger secondEntry;
+    
+    switch(sender.tag) {
+        case 0:
+            
+    }
+}
+
+
 @end

@@ -16,8 +16,9 @@
 @property (nonatomic) Player* playerTwo;
 @property (nonatomic) Player* currentPlayer;
 @property (nonatomic) AdditionQuestion* anotherQuestion;
+@property (nonatomic) NSInteger answer;
 
 -(void)wrongAnswer:(Player*)player;
 -(NSMutableString*)playerAndQuestion;
-
+-(void)answerQuestionWith:(NSInteger)firstEntry  and:(NSInteger)secondEntry;
 @end
