@@ -15,6 +15,10 @@
 		89DC1CA4203BAF35009DE0D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DC1CA3203BAF35009DE0D0 /* main.m */; };
 		89DC1CAE203BAF35009DE0D0 /* TwoPlayerMathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DC1CAD203BAF35009DE0D0 /* TwoPlayerMathTests.m */; };
 		89DC1CB9203BAF35009DE0D0 /* TwoPlayerMathUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DC1CB8203BAF35009DE0D0 /* TwoPlayerMathUITests.m */; };
+		89DC1CC8203BB25A009DE0D0 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DC1CC7203BB25A009DE0D0 /* Question.m */; };
+		89DC1CCB203BB2F3009DE0D0 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DC1CCA203BB2F3009DE0D0 /* AdditionQuestion.m */; };
+		89DC1CCE203BB497009DE0D0 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DC1CCD203BB497009DE0D0 /* Player.m */; };
+		89DC1CD1203BB774009DE0D0 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DC1CD0203BB774009DE0D0 /* GameModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		89DC1CB4203BAF35009DE0D0 /* TwoPlayerMathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoPlayerMathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DC1CB8203BAF35009DE0D0 /* TwoPlayerMathUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoPlayerMathUITests.m; sourceTree = "<group>"; };
 		89DC1CBA203BAF35009DE0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89DC1CC6203BB25A009DE0D0 /* Question.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		89DC1CC7203BB25A009DE0D0 /* Question.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		89DC1CC9203BB2F3009DE0D0 /* AdditionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
+		89DC1CCA203BB2F3009DE0D0 /* AdditionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		89DC1CCC203BB497009DE0D0 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		89DC1CCD203BB497009DE0D0 /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		89DC1CCF203BB774009DE0D0 /* GameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameModel.h; sourceTree = "<group>"; };
+		89DC1CD0203BB774009DE0D0 /* GameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +122,14 @@
 				89DC1C9F203BAF35009DE0D0 /* LaunchScreen.storyboard */,
 				89DC1CA2203BAF35009DE0D0 /* Info.plist */,
 				89DC1CA3203BAF35009DE0D0 /* main.m */,
+				89DC1CC6203BB25A009DE0D0 /* Question.h */,
+				89DC1CC7203BB25A009DE0D0 /* Question.m */,
+				89DC1CC9203BB2F3009DE0D0 /* AdditionQuestion.h */,
+				89DC1CCA203BB2F3009DE0D0 /* AdditionQuestion.m */,
+				89DC1CCC203BB497009DE0D0 /* Player.h */,
+				89DC1CCD203BB497009DE0D0 /* Player.m */,
+				89DC1CCF203BB774009DE0D0 /* GameModel.h */,
+				89DC1CD0203BB774009DE0D0 /* GameModel.m */,
 			);
 			path = TwoPlayerMath;
 			sourceTree = "<group>";
@@ -266,8 +286,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				89DC1C99203BAF35009DE0D0 /* ViewController.m in Sources */,
+				89DC1CC8203BB25A009DE0D0 /* Question.m in Sources */,
 				89DC1CA4203BAF35009DE0D0 /* main.m in Sources */,
+				89DC1CCB203BB2F3009DE0D0 /* AdditionQuestion.m in Sources */,
+				89DC1CCE203BB497009DE0D0 /* Player.m in Sources */,
 				89DC1C96203BAF35009DE0D0 /* AppDelegate.m in Sources */,
+				89DC1CD1203BB774009DE0D0 /* GameModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
