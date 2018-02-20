@@ -23,6 +23,8 @@
     return self;
 }
 
--(void)generateQuestion{}
+-(NSMutableString*)generateQuestion{
+    return 0;
+}
 
 @end

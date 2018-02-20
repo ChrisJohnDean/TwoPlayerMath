@@ -11,6 +11,8 @@
 @interface Player : NSObject
 
 @property (nonatomic) int lives;
+@property (nonatomic) NSMutableString* playerNumber;
 
+- (instancetype)initWithNumber:(NSMutableString*)playerNumber;
 
 @end

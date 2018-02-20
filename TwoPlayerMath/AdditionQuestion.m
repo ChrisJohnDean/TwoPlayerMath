@@ -19,8 +19,8 @@
     return self;
 }
 
--(NSString*)generateQuestion {
-    self.question = [NSString stringWithFormat:@"%ld + %ld ?", (long)self.rightValue, (long)self.leftValue];
+-(NSMutableString*)generateQuestion {
+    self.question = [NSMutableString stringWithFormat:@"%ld + %ld ?", (long)self.rightValue, (long)self.leftValue];
     self.answer = self.leftValue + self.rightValue;
     return self.question;
 }

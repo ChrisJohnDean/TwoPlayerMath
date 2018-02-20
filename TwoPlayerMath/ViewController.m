@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "AdditionQuestion.h"
+#import "GameModel.h"
 
 @interface ViewController ()
+
+@property (nonatomic) GameModel* gameModel;
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
 
 @end
 
@@ -16,14 +21,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.gameModel = [[GameModel alloc] init];
+    NSString* fullQuestion = [self.gameModel playerAndQuestion];
+    self.questionLabel.text = fullQuestion;
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)submitAnswer:(id)sender {
+    
+}
 
 @end

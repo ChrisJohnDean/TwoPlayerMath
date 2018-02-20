@@ -10,11 +10,11 @@
 
 @interface Question : NSObject
 
-@property (nonatomic, strong) NSString *question;
+@property (nonatomic, weak) NSMutableString *question;
 @property (nonatomic) NSInteger rightValue;
 @property (nonatomic) NSInteger leftValue;
 @property (nonatomic) NSInteger answer;
 
--(NSString*)generateQuestion;
+-(NSMutableString*)generateQuestion;
 
 @end

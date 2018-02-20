@@ -8,18 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "Player.h"
-
-typedef NS_ENUM(NSInteger, WhichPlayer) {
-    PlayerOne,
-    PlayerTwo,
-};
+#import "AdditionQuestion.h"
 
 @interface GameModel : NSObject
 
 @property (nonatomic) Player* playerOne;
 @property (nonatomic) Player* playerTwo;
-@property (nonatomic) WhichPlayer currentPlayer;
+@property (nonatomic) Player* currentPlayer;
+@property (nonatomic) AdditionQuestion* anotherQuestion;
 
 -(void)wrongAnswer:(Player*)player;
+-(NSMutableString*)playerAndQuestion;
 
 @end

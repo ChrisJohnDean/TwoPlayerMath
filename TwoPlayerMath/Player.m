@@ -10,4 +10,13 @@
 
 @implementation Player
 
+- (instancetype)initWithNumber:(NSMutableString*)playerNumber
+{
+    self = [super init];
+    if (self) {
+        _playerNumber = [NSMutableString stringWithFormat:@"Player %@:", playerNumber];
+    }
+    return self;
+}
+
 @end
