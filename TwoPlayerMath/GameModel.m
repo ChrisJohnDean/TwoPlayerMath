@@ -43,9 +43,8 @@
     }
 }
 
--(void)answerQuestionWith:(NSInteger)firstEntry  and:(NSInteger)secondEntry {
-    self.answer = (firstEntry*10) + secondEntry;
-    if(self.answer == self.anotherQuestion.answer) {
+-(void)answerQuestionWith:(NSInteger)answer {
+    if(answer != self.anotherQuestion.answer) {
         self.currentPlayer.lives -= 1;
     }
     [self changeTurn];
