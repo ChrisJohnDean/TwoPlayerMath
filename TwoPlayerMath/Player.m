@@ -15,6 +15,7 @@
     self = [super init];
     if (self) {
         _playerNumber = [NSMutableString stringWithFormat:@"Player %@:", playerNumber];
+        _lives = 3;
     }
     return self;
 }

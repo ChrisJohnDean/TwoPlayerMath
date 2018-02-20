@@ -150,6 +150,8 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="ITW-Jo-P95" id="Cvt-F0-BjT"/>
+                        <outlet property="playerOneScore" destination="5Kd-Pq-10L" id="p7i-UA-eov"/>
+                        <outlet property="playerTwoScore" destination="R0a-7B-FFZ" id="2WB-Fa-jMi"/>
                         <outlet property="questionLabel" destination="5k2-hs-612" id="C2e-5n-y2P"/>
                     </connections>
                 </viewController>
