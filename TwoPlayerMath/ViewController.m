@@ -44,10 +44,29 @@
     self.answerLabel.text = @"";
     self.playerOneScore.text = [NSString stringWithFormat:@"Player 1: %d", self.gameModel.playerOne.lives];
     self.playerTwoScore.text = [NSString stringWithFormat:@"Player 2: %d", self.gameModel.playerTwo.lives];
-    
-//    if([self.gameModel isGameOver]) {
-//        self.enterLabel. = @"GAME OVER";
-//    }
+   
+    if(self.gameModel.isGameOver) {
+        
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"GAME OVER!"
+                                                                       message:@"Play again?"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action) {
+                                                                  self.gameModel = [[GameModel alloc] init];
+                                                                  NSString* fullQuestion = [self.gameModel playerAndQuestion];
+                                                                  self.questionLabel.text = fullQuestion;
+                                                                  self.playerOneScore.text = @"Player 1: 3";
+                                                                  self.playerTwoScore.text = @"Player 2: 3";
+                                                              }];
+        
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"NO" style:UIAlertActionStyleCancel handler:nil];
+        [alert addAction:cancel];
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    }
+
     
     NSString* fullQuestion = [self.gameModel playerAndQuestion];
     self.questionLabel.text = fullQuestion;

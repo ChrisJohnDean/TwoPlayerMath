@@ -52,9 +52,9 @@
 }
 
 -(BOOL)isGameOver {
-    if(self.playerOne.lives < 0) {
+    if(self.playerOne.lives <= 0) {
         return true;
-    } else if(self.playerTwo < 0) {
+    } else if(self.playerTwo <= 0) {
     return true;
     } else {
     return false;
